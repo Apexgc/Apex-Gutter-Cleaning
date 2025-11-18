@@ -66,3 +66,27 @@ footer { padding: 30px 20px; text-align: center; color: #555; font-size: 0.9rem;
   .service-cards { flex-direction: row; justify-content: center; flex-wrap: wrap; }
   .card { width: 250px; }
 }
+
+/* Logo */
+.logo-container {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 3;
+}
+
+.logo {
+  width: 150px; /* adjust as needed */
+  height: auto;
+}
+
+@media(max-width:768px){
+  .logo-container {
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .logo {
+    width: 120px;
+  }
+}
