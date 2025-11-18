@@ -2,6 +2,19 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: 'Poppins', sans-serif; background: #ffffff; color: #333; line-height: 1.6; overflow-x: hidden; }
 
+/* Fixed Logo */
+.logo-fixed {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 150px;
+  height: auto;
+  z-index: 9999;
+}
+@media(max-width:768px){
+  .logo-fixed { top: 15px; left: 15px; width: 120px; }
+}
+
 /* HERO */
 .hero { position: relative; display: flex; justify-content: center; align-items: center; height: 80vh; text-align: center; overflow: hidden; }
 .hero-content { z-index: 2; }
@@ -66,30 +79,3 @@ footer { padding: 30px 20px; text-align: center; color: #555; font-size: 0.9rem;
   .service-cards { flex-direction: row; justify-content: center; flex-wrap: wrap; }
   .card { width: 250px; }
 }
-
-/* Hero top section for logo */
-.hero-top {
-  display: flex;
-  justify-content: flex-start; /* top-left corner */
-  padding: 20px 40px 0 40px;
-  position: relative;
-  z-index: 2; /* stays above hero background */
-}
-
-.logo {
-  width: 160px; /* adjust size */
-  height: auto;
-}
-
-/* Responsive adjustments for mobile */
-@media(max-width:768px){
-  .hero-top {
-    padding: 15px 20px 0 20px;
-  }
-  .logo {
-    width: 120px; /* smaller for phones */
-  }
-}
-
-
-
