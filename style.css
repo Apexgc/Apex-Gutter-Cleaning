@@ -70,24 +70,26 @@ footer { padding: 30px 20px; text-align: center; color: #555; font-size: 0.9rem;
 /* Hero top section for logo */
 .hero-top {
   display: flex;
-  justify-content: center; /* center on mobile */
-  padding: 20px;
+  justify-content: flex-start; /* top-left corner */
+  padding: 20px 40px 0 40px;
+  position: relative;
+  z-index: 2; /* stays above hero background */
 }
 
 .logo {
-  width: 160px; /* scales on desktop */
+  width: 160px; /* adjust size */
   height: auto;
 }
 
-/* Responsive for larger screens */
-@media(min-width:768px){
+/* Responsive adjustments for mobile */
+@media(max-width:768px){
   .hero-top {
-    justify-content: flex-start; /* left-align on desktop */
-    padding-left: 40px;
+    padding: 15px 20px 0 20px;
   }
   .logo {
-    width: 180px;
+    width: 120px; /* smaller for phones */
   }
 }
+
 
 
