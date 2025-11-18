@@ -67,26 +67,27 @@ footer { padding: 30px 20px; text-align: center; color: #555; font-size: 0.9rem;
   .card { width: 250px; }
 }
 
-/* Logo */
-.logo-container {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  z-index: 3;
+/* Hero top section for logo */
+.hero-top {
+  display: flex;
+  justify-content: center; /* center on mobile */
+  padding: 20px;
 }
 
 .logo {
-  width: 150px; /* adjust as needed */
+  width: 160px; /* scales on desktop */
   height: auto;
 }
 
-@media(max-width:768px){
-  .logo-container {
-    top: 15px;
-    left: 50%;
-    transform: translateX(-50%);
+/* Responsive for larger screens */
+@media(min-width:768px){
+  .hero-top {
+    justify-content: flex-start; /* left-align on desktop */
+    padding-left: 40px;
   }
   .logo {
-    width: 120px;
+    width: 180px;
   }
 }
+
+
