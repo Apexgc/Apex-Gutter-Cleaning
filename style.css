@@ -5,14 +5,15 @@ body { font-family: 'Poppins', sans-serif; background: #ffffff; color: #333; lin
 /* Fixed Logo */
 .logo-fixed {
   position: fixed;
-  top: 20px;
-  left: 20px;
-  width: 150px;
+  top: 15px;
+  left: 15px;
+  width: 100px; /* smaller on desktop */
   height: auto;
   z-index: 9999;
+  transition: all 0.3s ease;
 }
 @media(max-width:768px){
-  .logo-fixed { top: 15px; left: 15px; width: 120px; }
+  .logo-fixed { top: 10px; left: 10px; width: 80px; }
 }
 
 /* HERO */
@@ -79,23 +80,3 @@ footer { padding: 30px 20px; text-align: center; color: #555; font-size: 0.9rem;
   .service-cards { flex-direction: row; justify-content: center; flex-wrap: wrap; }
   .card { width: 250px; }
 }
-/* Fixed logo in the top-left corner of the page */
-.logo-fixed {
-  position: fixed;  /* stays in corner when scrolling */
-  top: 15px;        /* distance from top */
-  left: 15px;       /* distance from left */
-  width: 100px;     /* smaller on desktop */
-  height: auto;
-  z-index: 9999;    /* above all content */
-  transition: all 0.3s ease; /* smooth resizing if needed */
-}
-
-/* Responsive adjustments for mobile */
-@media(max-width:768px){
-  .logo-fixed {
-    top: 10px;
-    left: 10px;
-    width: 80px;  /* smaller on phones */
-  }
-}
-
